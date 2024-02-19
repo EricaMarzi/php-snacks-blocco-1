@@ -6,12 +6,12 @@ $name = $_GET['name'] ?? '';
 $age = $_GET['age'] ?? '';
 $email = $_GET['email'] ?? '';
 
-if(strlen($name)< 3) {
-    $message = 'Accesso Negato';
-    $class = 'text-danger';
-}else {
+if(strlen($name)> 3 && ctype_digit($age)) {
     $message = 'Accesso Riuscito';
     $class = 'text-success';
+}else {
+    $message = 'Accesso Negato';
+    $class = 'text-danger';
 };
 
 ?>
