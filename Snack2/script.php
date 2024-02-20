@@ -6,7 +6,7 @@ $name = $_GET['name'] ?? '';
 $age = $_GET['age'] ?? '';
 $email = $_GET['email'] ?? '';
 
-if(strlen($name)> 3 && ctype_digit($age) && (strpos($email, '@') !== false) && (strpos($email, '.') !== false)) {
+if(strlen($name)> 3 && ctype_digit($age) && str_contains($email, '@')  && str_contains($email, '.')) {
     $message = 'Accesso Riuscito';
     $class = 'text-success';
 }else {

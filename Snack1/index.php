@@ -7,20 +7,20 @@ $basketball_games = [
     [
         'home' => 'Atlanta Hawks',
         'guest' => 'Oklaoma City Thunder',
-        'home_points' => '91',
-        'guest_points' => '128'
+        'home_points' => 91,
+        'guest_points' => 128
     ],
     [
         'home' => 'Los Angeles Lakers',
         'guest' => 'Chicago Bulls',
-        'home_points' => '113',
-        'guest_points' => '110'
+        'home_points' => 113,
+        'guest_points' => 110
     ],
     [
         'home' => 'Charlotte Hornets',
         'guest' => 'Denver Nuggets',
-        'home_points' => '116',
-        'guest_points' => '100'
+        'home_points' => 116,
+        'guest_points' => 100
     ]
 ]
 
@@ -40,7 +40,7 @@ $basketball_games = [
     <h2>Calendar</h2>
     <ul class="list-unstyled">
         <?php foreach ($basketball_games as $game) : ?>
-            <li><?= $game['home'] ?> - <?= $game['guest'] ?> | <?= $game['home_points'] ?> - <?= $game['guest_points'] ?></li>
+            <li><?= $game['home'] ?> - <?= $game['guest'] ?> | <?= $game['home_points'] ?>-<?= $game['guest_points'] ?></li>
         <?php endforeach ?>
     </ul>
 </div>
